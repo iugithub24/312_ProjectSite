@@ -1,0 +1,175 @@
+/* Index.html and Week.html */
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #c4bfc0;
+}
+
+#menuContainer {
+    margin-right: 20px;
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    background-color: black; 
+    text-align: center;
+    transition: transform .8s ease;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.fa-square-x-twitter {
+    scale: 2.4;
+    transition: .3s ease-in;
+}
+
+.fa-square-x-twitter:hover {
+    scale: 2.8;
+    transition: .3s ease-in;
+}
+
+.fa-house {
+    margin-inline: 5px;
+}
+
+#logoContainer {
+    margin-left: 25px;
+}
+
+nav:target {
+    transform: translateY(0);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CFB991;
+    padding: 10px;
+}
+
+ul a:hover {
+    border-bottom: solid 2px white;
+    transition: .3s;
+}
+
+nav li {
+    display: block;
+    margin-inline: 20px;
+    font-size: 20px;
+}
+
+.hamburger, .close {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        width: 100%;
+        height: 80vh;
+        transform: translateY(-93%);
+        z-index: 1;
+    }
+
+    .fa-square-x-twitter {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        z-index: 2;
+    }
+    
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        scale: 1.5;
+    }
+
+    .hamburger {
+        scale: 2;
+        margin: 12px;
+        color: #CFB991;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -160px;
+    }
+
+    nav li {
+        margin-block: 40px;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
+
+
+
+/* Index.html */
+
+#wrapper1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#imageContainer img {
+    width: 100%;
+    height: 85%;
+    margin-top: 30px;
+}
+
+#imageCaptionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+    font-family: Geneva, sans-serif;
+    font-size: small;
+    height: 175px;
+}
+
+
+/* Week.html */
+
+#placeHolder {
+    height: 610px;
+    display: flex;
+    align-items: center;
+    font-family: Geneva, sans-serif;
+}
+
+h1 {
+    font-size: x-large;
+}
+
