@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
 body {
     background-color: #c4bfc0;
 }
@@ -43,9 +49,11 @@ nav {
     margin-left: 25px;
 }
 
+
 nav:target {
     transform: translateY(0);
 }
+
 
 nav ul {
     list-style-type: none;
@@ -75,12 +83,14 @@ nav li {
     display: none;
 }
 
+
 @media screen and (max-width: 700px) {
     nav {
         width: 100%;
-        height: 80vh;
-        transform: translateY(-93%);
-        z-index: 1;
+        height: 40vh;
+        transform: translateY(-100%);
+        z-index: 2;
+        text-align: center;
     }
 
     .fa-square-x-twitter {
@@ -94,7 +104,6 @@ nav li {
         right: 10px;
         z-index: 2;
     }
-    
 
     .close {
         display: block;
@@ -111,17 +120,20 @@ nav li {
         color: #CFB991;
     }
 
+    
+
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         position: relative;
-        left: -160px;
+        left: -200px;
+        top: -10px;
     }
-
+    
     nav li {
-        margin-block: 40px;
+        margin-block: 25px;
     }
 }
 
@@ -129,6 +141,8 @@ footer {
     width: 100%;
     background-color: black;
     height: 200px;
+    position: relative;
+    bottom: 0px;
 }
 
 
@@ -145,7 +159,6 @@ footer {
 #imageContainer img {
     width: 100%;
     height: 85%;
-    margin-top: 30px;
 }
 
 #imageCaptionContainer {
@@ -156,7 +169,7 @@ footer {
     text-align: left;
     font-family: Geneva, sans-serif;
     font-size: small;
-    height: 175px;
+    height: 275px;
 }
 
 
@@ -172,4 +185,5 @@ footer {
 h1 {
     font-size: x-large;
 }
+
 
